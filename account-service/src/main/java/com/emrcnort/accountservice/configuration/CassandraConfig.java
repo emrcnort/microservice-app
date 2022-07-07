@@ -11,7 +11,7 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 @EnableCassandraRepositories
 public class CassandraConfig extends AbstractCassandraConfiguration {
 
-    @Value("${springcloud.cassandra.keyspacename.name}")
+    @Value("${springcloud.cassandra.keyspace.name}")
     private String keyspaceName;
 
     @Value("${springcloud.cassandra.url}")
