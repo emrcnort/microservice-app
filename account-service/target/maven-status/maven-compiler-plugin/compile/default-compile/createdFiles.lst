@@ -1,0 +1,6 @@
+com\emrcnort\accountservice\controller\AccountController.class
+com\emrcnort\accountservice\service\AccountService.class
+com\emrcnort\accountservice\AccountServiceApplication.class
+com\emrcnort\accountservice\entity\Account.class
+com\emrcnort\accountservice\repository\AccountRepository.class
+com\emrcnort\accountservice\configuration\CassandraConfig.class
