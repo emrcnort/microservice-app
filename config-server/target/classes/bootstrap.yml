@@ -1,5 +1,7 @@
 server:
   port: 8888
+  refresh:
+    enabled: true
 
 spring:
   cloud:
@@ -9,4 +11,3 @@ spring:
           search-locations: classpath:/apps
   profiles:
     active: native
-

@@ -9,4 +9,3 @@ spring:
           search-locations: classpath:/apps
   profiles:
     active: native
-
