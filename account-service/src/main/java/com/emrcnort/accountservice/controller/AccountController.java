@@ -31,7 +31,7 @@ public class AccountController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<AccountDto> update(@PathVariable("id") String id, @RequestBody AccountDto account){
+    public ResponseEntity<AccountDto> update(@PathVariable String id, @RequestBody AccountDto account){
         return ResponseEntity.ok(accountService.update(id,account));
     }
 
