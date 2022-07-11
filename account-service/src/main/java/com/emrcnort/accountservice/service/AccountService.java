@@ -1,9 +1,9 @@
 package com.emrcnort.accountservice.service;
 
-import com.emrcnort.accountservice.dto.AccountDto;
 import com.emrcnort.accountservice.entity.Account;
 import com.emrcnort.accountservice.repository.AccountRepository;
 import com.emrcnort.accountservice.util.mapper.AccountMapper;
+import com.emrcnort.contract.AccountDto;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

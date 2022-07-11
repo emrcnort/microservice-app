@@ -6,7 +6,7 @@ import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 import java.util.UUID;
 
 @Getter

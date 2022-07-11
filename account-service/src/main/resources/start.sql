@@ -10,6 +10,9 @@ CREATE TABLE accounts(
                     uname text,
                     email text,
                     pwd text,
+                    name text,
+                    surname text,
+                    birth_date date,
                     created_at date,
                     is_active boolean
 );
@@ -19,3 +22,4 @@ VALUES ('c4b65263-fe58-4846-83e8-f0e1c13d518f', 'RATTO', 'Rissella@gmail.com','p
 
 select * from accounts;
 
+TRUNCATE  springcloud.accounts;
