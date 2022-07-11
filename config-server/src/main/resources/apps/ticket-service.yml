@@ -13,6 +13,16 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: update
+  rabbitmq:
+    username: emrcnort
+    password: emrcnort
+
+
+queue:
+  rabbitmq:
+    exchange: default
+    name: msqueue
+    routingKey: routingkey
 
 eureka:
   client:

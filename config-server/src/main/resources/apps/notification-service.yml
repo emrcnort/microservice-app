@@ -1,0 +1,25 @@
+server:
+  port: 8503
+
+spring:
+  application:
+    name: notification-service
+  rabbitmq:
+    username: emrcnort
+    password: emrcnort
+
+queue:
+  rabbitmq:
+    exchange: default
+    name: msqueue
+    routingKey: routingkey
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka
+
+
+
+
+

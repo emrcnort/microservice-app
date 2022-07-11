@@ -9,7 +9,6 @@ import com.emrcnort.ticketservice.entity.enums.PriorityType;
 import com.emrcnort.ticketservice.entity.enums.TicketStatus;
 import com.emrcnort.ticketservice.repository.TicketRepository;
 import com.emrcnort.ticketservice.repository.elasticsearch.TicketElasticRepository;
-import com.emrcnort.ticketservice.utils.mapper.TicketMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -24,7 +23,7 @@ public class TicketService {
     private final TicketRepository ticketRepository;
     private final TicketElasticRepository ticketElasticRepository;
     private final AccountServiceClient accountServiceClient;
-    private final TicketMapper mapper;
+    private final TicketNotificationService ticketNotificationService;
 
     @Transactional
     public TicketDto save(TicketDto ticketDto){
@@ -54,6 +53,9 @@ public class TicketService {
        ticketElasticRepository.save(ticketModel);
 
        ticketDto.setId(ticket.getId());
+
+       ticketNotificationService.sendToQueue(ticket);
+
        return ticketDto;
 
     };
