@@ -16,6 +16,8 @@ spring:
   rabbitmq:
     username: emrcnort
     password: emrcnort
+  zipkin:
+    base-url: http://localhost:9411/
 
 
 queue:
