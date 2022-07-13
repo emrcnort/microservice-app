@@ -29,11 +29,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.emrcnort</groupId>
-            <artifactId>service-common</artifactId>
-            <version>10.0.1</version>
-        </dependency>
     </dependencies>
 
 </project>
